@@ -1,0 +1,24 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-div {
+  background-color: #222222;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.home-div .inner-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #01131B;
+  padding: 150px;
+  width: 100%;
+  max-width: 420px;
+  padding: 15px;
+  margin: auto;
+}/*# sourceMappingURL=home.css.map */
