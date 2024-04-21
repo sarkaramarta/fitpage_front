@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import "../style/home.css";
-
+import Test from './test';
 const More = () => {
     var regex = '/\$Number/';
-    replacement = <Link></Link>
+    
     const [data, setData] = useState();
     let param = useParams();
     // console.log(Number(param))
@@ -43,7 +43,11 @@ const More = () => {
                       return (
                         <>
                           {
-                             
+                            //  <h3>{i.text}</h3>
+                            //  <h3>{i.text.replace(new RegExp(('\\$Number'),(match) , <Link>{i.variable.$1.values[0]}</Link>))}</h3>
+                             <h3>{i.text? i?.text?.replace('$1',<Test/>):
+                              "random"
+                             }</h3>
                           }
                         </>
                       )
